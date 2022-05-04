@@ -1,3 +1,10 @@
+.delete {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  filter: invert(60%);
+}
 .recipe-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
