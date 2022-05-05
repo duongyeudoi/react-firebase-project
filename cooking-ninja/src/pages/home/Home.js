@@ -16,8 +16,9 @@ export default function Home() {
     const unsub = projectFirestore.collection('recipes').onSnapshot(
       (snapshot) => {
         if (snapshot.empty) {
-          setError('No database');
+          // setError('No database');
           setIsPending(false);
+          setData([]);
         } else {
           let results = [];
           snapshot.docs.forEach((doc) =>
